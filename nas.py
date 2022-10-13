@@ -227,13 +227,14 @@ class Nas:
     def clean_dashboard(self):
         pass
 
-    def containers(self, containers, app_pool):
-        # params = {
-        #     "pool": app_pool
-        # }
+    def set_container_pool(self, containers):
+        params = {
+            "pool": containers['pool']
+        }
 
-        # response = self.method("kubernetes.update", [params])
+        response = self.method("kubernetes.update", [params])
 
-        for container in containers:
+    def containers(self, containers):
+        for container in containers['containers']:
             response = self.method("chart.release.create", [container])
             pass
