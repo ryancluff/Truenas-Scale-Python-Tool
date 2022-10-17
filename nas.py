@@ -235,6 +235,6 @@ class Nas:
         response = self.method("kubernetes.update", [params])
 
     def containers(self, containers):
-        for container in containers['containers']:
+        for container in containers:
             response = self.method("chart.release.create", [container])
             pass
