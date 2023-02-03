@@ -1,3 +1,3 @@
-# Truenas Scale Setup Python Library
+# Truenas Scale Python Tool
 
-A simple Python library to automate the setup of Truenas Scale instances using the websocket.
+A simple Python tool to automate the setup of Truenas Scale instances using the websocket.
